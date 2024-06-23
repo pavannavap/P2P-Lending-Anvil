@@ -92,7 +92,7 @@ class field_engineer(field_engineerTemplate):
 
           distance = self.calculate_distance(customer_coordinates, engineer_coordinates)
           distances.append((distance, engineer))
-          self.drop_down_1.
+          self.drop_down_1
           print(distances)
 
       # Sort field engineers by distance

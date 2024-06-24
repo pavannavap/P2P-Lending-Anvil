@@ -108,7 +108,7 @@ class field_engineer(field_engineerTemplate):
 
   def button_2_click(self, **event_args):
     print(self.label_18.text)
-    update = self.label_18.text.strip()
+    update = self.drop_down_1.text.strip()
     self.selected_row['field_engineer'] = update
     self.selected_row.update()
     alert("Issue Assigned")

@@ -16,7 +16,7 @@ services:
 - source: /runtime/services/anvil/secrets.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: admin.dashboard.accounting.mis_reports}
+startup: {type: form, module: bank_users.main_form}
 package_name: pip_install_reportlab
 allow_embedding: false
 name: P2P Lending App clone 25/06/2024
@@ -820,6 +820,32 @@ db_schema:
       admin_ui: {order: 0, width: 200}
       type: string
     title: fin_gender
+  fin_platform_fees:
+    title: fin_platform_fees
+    client: full
+    server: full
+    columns:
+    - name: platform_returns
+      admin_ui: {width: 200}
+      type: number
+    - name: most_used_product
+      admin_ui: {width: 200}
+      type: string
+    - name: total_borrowers
+      admin_ui: {width: 200}
+      type: number
+    - name: total_borrowers_loan_taken
+      admin_ui: {width: 250}
+      type: number
+    - name: total_lenders
+      admin_ui: {width: 200}
+      type: number
+    - name: total_lenders_invested
+      admin_ui: {width: 200}
+      type: number
+    - name: total_products_count
+      admin_ui: {width: 200}
+      type: number
   fin_lender_spouse_profession:
     title: fin_lender_spouse_profession
     client: full

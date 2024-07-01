@@ -21,7 +21,7 @@ components:
     type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
     layout_properties: {grid_position: 'DBPEIT,PCFDZF', full_width_row: true}
   - name: button_1
-    properties: {text: Back, role: elevated-button, icon: 'fa:angle-double-left', align: right, bold: true, background: '#05264d', foreground: white}
+    properties: {text: Back, role: elevated-button, icon: 'fa:backward', align: right, bold: true, background: '#05264d', foreground: white}
     type: Button
     layout_properties: {grid_position: 'ACPAAD,HTIFJR', full_width_row: true}
     event_bindings: {click: button_1_click}

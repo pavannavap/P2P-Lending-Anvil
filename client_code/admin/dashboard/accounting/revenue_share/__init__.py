@@ -79,8 +79,8 @@ class revenue_share(revenue_shareTemplate):
       customer_id = lender['customer_id']
       loans = app_tables.fin_loan_details.search(
         loan_updated_status=q.any_of(
-          q.like('closed loan'), q.like('foreclosure'), 
-          q.like('extension'), q.like('disbursed loan')
+          q.like('closed'), q.like('foreclosure'), 
+          q.like('extension'), q.like('disbursed')
         ),
         lender_customer_id=customer_id
       )

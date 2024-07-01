@@ -150,41 +150,21 @@ class lender_portfolio(lender_portfolioTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pdf = anvil.server.call('create_pdf',"My Portfolio","self.image_4.source",self.selected_row)
-    anvil.media.download(pdf)
+    self.convert_panel_to_pdf()
 
-  # def check_task_status(self, task):
-  #   result = task.get_status()
-  #   if result == 'complete':
-  #       anvil.media.download(task.get_return_value())
-  #   else:
-  #       # Schedule the check_task_status function to run again after a short delay
-  #       anvil.js.window.setTimeout(lambda: self.check_task_status(task), 1000)
-
-
-  # def button_1_click(self, **event_args):
-  #   """This method is called when the button is clicked"""
-  #   task_id = anvil.server.call('start_create_pdf_background', "My Portfolio", self.image_1.source, self.selected_row)
-  #   self.check_task_status(task_id)
-
-  # def check_task_status(self, task_id):
-  #     task_state = anvil.server.call('get_task_status', task_id)
+  def convert_panel_to_pdf(self):
+      # Assuming 'content_panel' is the panel containing your data
+      content_panel = self.content
       
-  #     status = task_state.get('status', 'unknown')
+      # Call the server function to create the PDF from the content panel
+      pdf = anvil.server.call('create_pdf_of_lender_portfolio', content_panel)
       
-  #     if status == 'completed':
-  #         pdf = task_state.get('result')
-  #         if pdf:
-  #             anvil.media.download(pdf)
-  #         else:
-  #             anvil.Notification("PDF generation completed but no file returned.", style='warning').show()
-  #     elif status == 'failed':
-  #         error = task_state.get('error', 'Unknown error')
-  #         anvil.Notification(f"PDF generation failed: {error}", style='danger').show()
-  #     elif status == 'unknown':
-  #         anvil.Notification("Background task not found or in unknown state.", style='danger').show()
-  #     else:
-  #         # Schedule the check_task_status function to run again after a short delay
-  #         anvil.js.window.setTimeout(lambda: self.check_task_status(task_id), 1000)
+      # Prompt the user to download the PDF
+      anvil.media.download(pdf)
+      
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('lendor.dashboard')
   
   

@@ -203,6 +203,18 @@ class borrower_portfolio(borrower_portfolioTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pdf = anvil.server.call('create_pdf1',"My Portfolio","self.image_2.source",self.selected_row)
-    anvil.media.download(pdf)
-    
+    self.convert_panel_to_pdf()
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('borrower.dashboard')
+
+  def convert_panel_to_pdf(self):
+      # Assuming 'content_panel' is the panel containing your data
+      content_panel = self.content
+      
+      # Call the server function to create the PDF from the content panel
+      pdf = anvil.server.call('create_pdf_of_borrower_portfolio', content_panel)
+      
+      # Prompt the user to download the PDF
+      anvil.media.download(pdf)

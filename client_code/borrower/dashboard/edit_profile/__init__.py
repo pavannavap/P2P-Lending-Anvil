@@ -96,3 +96,5 @@ class edit_profile(edit_profileTemplate):
         # Regular expression for validating 10-digit mobile number
         pattern = r'^\d{10}$'
         return re.match(pattern, mobile)
+
+  

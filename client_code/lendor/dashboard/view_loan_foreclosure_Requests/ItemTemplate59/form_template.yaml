@@ -52,7 +52,7 @@ components:
     type: Label
     layout_properties: {x: 10, y: 150.3392791748047, width: 200}
   - name: label_8
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Loan Amount, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Loan Amount}
     type: Label
     layout_properties: {x: 10, y: 190.25001525878906, width: 200}
   - name: label_9

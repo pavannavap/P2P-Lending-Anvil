@@ -7,7 +7,7 @@ components:
   type: form:admin.dashboard.home_button_admin
   layout_properties: {grid_position: 'FDZCKR,HLKJHX', full_width_row: true}
 - name: button_1
-  properties: {text: Back, background: '#05264d', foreground: white, role: elevated-button, icon: 'fa:angle-double-left', align: right}
+  properties: {text: Back, background: '#05264d', foreground: white, role: elevated-button, icon: 'fa:backward', align: right}
   type: Button
   layout_properties: {grid_position: 'ESRDLA,WAUOEX', full_width_row: true}
   event_bindings: {click: button_1_click}

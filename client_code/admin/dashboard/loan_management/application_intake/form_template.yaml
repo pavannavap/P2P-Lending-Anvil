@@ -1,3 +1,130 @@
-container: {type: ColumnPanel}
-components: []
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"SAJJYJ":20,"OAJFIE":25,"DCWVKZ":20,"KRXAYP":12,"KFYOPD":10}'}
+components:
+- name: home_button_admin_1
+  properties: {}
+  type: form:admin.dashboard.home_button_admin
+  layout_properties: {grid_position: 'NFDYMU,KFCFWI', full_width_row: true}
+- name: button_1
+  properties: {text: Back, foreground: 'theme:On Secondary', role: elevated-button, align: right, icon: 'fa:backward', background: '#05264d', bold: true}
+  type: Button
+  layout_properties: {grid_position: 'NMEICV,AUTFLL', full_width_row: true}
+  event_bindings: {click: button_1_click}
+- name: label_5
+  properties: {text: Customers Application Intake details, align: center, bold: true, role: title}
+  type: Label
+  layout_properties: {grid_position: 'LTRSEY,SNXBJM', full_width_row: true}
+- name: spacer_4
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'RKPRYV,GBIHPU', full_width_row: true}
+- name: plot_1
+  properties: {visible: true}
+  type: Plot
+  layout_properties: {grid_position: 'TFXDSL,CMNOUD'}
+  data_bindings: []
+- name: label_2
+  properties: {text: 'Select Date :', bold: true, align: right}
+  type: Label
+  layout_properties: {grid_position: 'EPGWVR,TINAOZ'}
+- name: date_picker_1
+  properties: {role: outlined}
+  type: DatePicker
+  layout_properties: {grid_position: 'EPGWVR,URVOSJ'}
+  event_bindings: {change: date_picker_1_change}
+- name: month_button_click
+  properties: {text: Month, role: null, background: '#05264d', foreground: 'theme:On Secondary', bold: true}
+  type: Button
+  layout_properties: {grid_position: 'EPGWVR,ECRNRY'}
+  event_bindings: {click: month_button_click_click}
+- name: year_button_click
+  properties: {text: Year, background: '#05264d', foreground: 'theme:On Secondary', bold: true}
+  type: Button
+  layout_properties: {grid_position: 'EPGWVR,RYNTMQ'}
+  event_bindings: {click: year_button_click_click}
+- name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'EPGWVR,QYIHSZ'}
+- name: spacer_3
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'JRZPER,XIKECK'}
+- name: spacer_6
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'DEZIEF,KFYOPD'}
+- name: content_panel_1
+  properties: {col_widths: '{"LYADWO":20,"PDBJTN":40}', background: white, role: elevated-card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'DEZIEF,SAJJYJ'}
+  event_bindings: {}
+  components:
+  - name: image_1
+    properties: {height: 58.22222900390625, source: _/theme/admin/dashboard/loan_management/open-loans.png, display_mode: shrink_to_fit}
+    type: Image
+    layout_properties: {grid_position: 'SAKSPH,LYADWO'}
+    event_bindings: {mouse_up: image_1_mouse_up}
+  - name: button_3
+    properties:
+      text: "All \nLoans"
+      bold: true
+      foreground: black
+      font_size: 15
+      role: null
+    type: Button
+    layout_properties: {grid_position: 'SAKSPH,PDBJTN PFYXEI,UGJSHB'}
+    event_bindings: {click: button_3_click}
+  - name: label_1
+    properties: {align: center, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'SAKSPH,PDBJTN UZQPXY,TTBMAB'}
+    event_bindings: {show: label_1_show}
+- name: content_panel_copy_copy_3_copy_3_copy_copy_copy_copy
+  properties: {col_widths: '{"SKKCRH":20,"BBCDWI":40}', background: white, role: elevated-card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'DEZIEF,OAJFIE'}
+  components:
+  - name: image_1_copy_3
+    properties: {height: 56, source: _/theme/admin/dashboard/loan_management/approved-loan.png}
+    type: Image
+    layout_properties: {grid_position: 'DNFMPP,SKKCRH'}
+    event_bindings: {mouse_up: image_1_copy_3_mouse_up}
+  - name: button_4
+    properties: {text: Approved Loans, bold: true, foreground: black, font_size: 15, role: null}
+    type: Button
+    layout_properties: {grid_position: 'DNFMPP,BBCDWI BJESVX,KXKHWX'}
+    event_bindings: {click: button_4_click}
+  - name: label_3
+    properties: {align: center, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'DNFMPP,BBCDWI OSEZAG,ZGVRVX'}
+- name: content_panel_1_copy
+  properties: {col_widths: '{"LYADWO":20,"PDBJTN":40}', background: white, role: elevated-card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'DEZIEF,DCWVKZ'}
+  components:
+  - name: image_1_copy
+    properties: {height: 57.4444580078125, source: _/theme/admin/dashboard/loan_management/rejected-loan.png}
+    type: Image
+    layout_properties: {grid_position: 'SAKSPH,LYADWO'}
+    event_bindings: {mouse_up: image_1_copy_mouse_up}
+  - name: button_5
+    properties: {text: Rejected Loans, bold: true, foreground: black, font_size: 15, role: null}
+    type: Button
+    layout_properties: {grid_position: 'SAKSPH,PDBJTN WIZTMJ,VPZRLL'}
+    event_bindings: {click: button_5_click}
+  - name: label_4
+    properties: {align: center, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'SAKSPH,PDBJTN OBBAFS,DSLKVS'}
+- name: spacer_2
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'DEZIEF,KRXAYP'}
+- name: spacer_5
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'MHPTFQ,CBOFMU'}
 is_package: true

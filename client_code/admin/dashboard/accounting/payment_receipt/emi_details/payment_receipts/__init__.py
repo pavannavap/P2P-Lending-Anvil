@@ -77,11 +77,20 @@ class payment_receipts(payment_receiptsTemplate):
         # Display the filtered EMIs in a repeating panel or similar component
         self.repeating_panel_1.items = filtered_emis
 
-    def button_1_click(self, **event_args):
-      """This method is called when the button is clicked"""
-      pdf = anvil.server.call('create_receipt_pdf',"Payment Receipt","self.image_1.source",self.selected_row)
+    def convert_panel_to_pdf(self):
+      # Assuming 'content_panel' is the panel containing your data
+      content_panel = self.content_panel
+      
+      # Call the server function to create the PDF from the content panel
+      pdf = anvil.server.call('create_pdf_of_payment_receipt', content_panel)
+      
+      # Prompt the user to download the PDF
       anvil.media.download(pdf)
 
     def button_2_click(self, **event_args):
       """This method is called when the button is clicked"""
-      open_form('admin.dashboard.accounting.payment_receipt.emi_details')
+      open_form('admin.dashboard.accounting.payment_receipt.emi_details', selected_row = self.selected_row)
+
+    def button_1_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      self.convert_panel_to_pdf()

@@ -48,4 +48,4 @@ class add_group(add_groupTemplate):
   #   open_form('admin.dashboard.manage_products')
 
   def button_1_copy_3_click(self, **event_args):
-    open_form('admin.dashboard.manage_products')
+    open_form('admin.dashboard.manage_products.choose_grooup_categoris')

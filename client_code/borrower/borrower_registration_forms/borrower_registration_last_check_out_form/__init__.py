@@ -14,3 +14,7 @@ class borrower_registration_last_check_out_form(borrower_registration_last_check
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('borrower.borrower_registration_forms')

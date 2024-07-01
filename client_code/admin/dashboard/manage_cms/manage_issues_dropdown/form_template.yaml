@@ -46,7 +46,7 @@ components:
     layout_properties: {grid_position: 'VXGGJT,QMFGMX'}
     event_bindings: {click: button_21_copy_copy_click}
 - name: button_1
-  properties: {text: back, icon: 'fa:angle-double-left', background: '#05264d', foreground: white, role: elevated-button}
+  properties: {text: back, icon: 'fa:backward', background: '#05264d', foreground: white, role: elevated-button}
   type: Button
   layout_properties: {grid_position: 'LCFCNZ,EEBDBM'}
   event_bindings: {click: button_1_click}

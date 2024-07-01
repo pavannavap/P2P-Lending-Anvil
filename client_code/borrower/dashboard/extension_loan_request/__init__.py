@@ -65,6 +65,4 @@ class extension_loan_request(extension_loan_requestTemplate):
         product_details_record = app_tables.fin_product_details.get(product_id=loan['product_id'])
         return product_details_record['extension_allowed'] == 'Yes'
 
-    def button_1_click(self, **event_args):
-        """This method is called when the button is clicked"""
-        open_form('borrower.dashboard')
+

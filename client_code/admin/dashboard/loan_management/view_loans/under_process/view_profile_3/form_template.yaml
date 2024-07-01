@@ -72,7 +72,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'NESHTV,LQZNUS UKIOEV,QXUVTX'}
     - name: label_25
-      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Beseem Score}
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Ascend Score}
       type: Label
       layout_properties: {grid_position: 'NESHTV,LQZNUS JLAGHB,ZXYSZW'}
     - name: label_27

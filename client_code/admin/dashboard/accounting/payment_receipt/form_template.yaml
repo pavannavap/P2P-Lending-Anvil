@@ -1,19 +1,19 @@
+is_package: true
 container: {type: ColumnPanel}
 components:
-- name: home_button_admin_1_copy
-  properties: {}
+- properties: {}
   type: form:admin.dashboard.home_button_admin
   layout_properties: {grid_position: 'XSTOOD,UHPUJH', full_width_row: true}
-- name: label_1
-  properties: {text: Payment Receipt, align: center, font_size: 30, bold: true}
+  name: home_button_admin_1_copy
+- properties: {text: Payment Receipt, align: center, font_size: 30, bold: true}
   type: Label
   layout_properties: {grid_position: 'HMQTWM,OOPDLB'}
-- name: spacer_1
-  properties: {height: '10'}
+  name: label_1
+- properties: {height: '10'}
   type: Spacer
   layout_properties: {grid_position: 'RLYLTG,NURPPH'}
-- name: data_grid_1
-  properties:
+  name: spacer_1
+- properties:
     columns:
     - {id: JKSDUP, title: 'Loan Id ', data_key: column_1}
     - {id: VJQQOR, title: 'Loan Amount ', data_key: column_2}
@@ -24,9 +24,14 @@ components:
     - {id: RYTBYV, data_key: column_1, title: Tenure}
     role: tonal-data-grid
   type: DataGrid
-  components:
-  - name: repeating_panel_1
-    properties: {item_template: admin.dashboard.accounting.payment_receipt.RowTemplate52}
-    type: RepeatingPanel
   layout_properties: {grid_position: 'YWVYKG,FIZYBH', full_width_row: true}
-is_package: true
+  name: data_grid_1
+  components:
+  - properties: {item_template: admin.dashboard.accounting.payment_receipt.RowTemplate52}
+    type: RepeatingPanel
+    name: repeating_panel_1
+- properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+  type: Button
+  layout_properties: {grid_position: 'NPHMZP,JWBFLV'}
+  event_bindings: {click: button_1_click}
+  name: button_1

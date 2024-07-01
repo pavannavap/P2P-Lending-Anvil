@@ -17,7 +17,7 @@ components:
       properties: {}
       layout_properties: {grid_position: 'KPIBYN,GISMLM', full_width_row: true}
       name: home_button_admin_1
-    - properties: {role: null, align: center, tooltip: '', border: '', foreground: '', visible: true, text: Manage Products, font_size: 30, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    - properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: Manage Products}
       type: Label
       layout_properties: {grid_position: 'EQXMGV,YVCYTL'}
       name: label_1_copy

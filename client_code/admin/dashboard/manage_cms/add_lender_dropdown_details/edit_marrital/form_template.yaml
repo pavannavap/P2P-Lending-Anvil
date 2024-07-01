@@ -1,7 +1,7 @@
 container: {type: ColumnPanel}
 components:
 - name: column_panel_1
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"FYQGWM":40,"IMCBIM":10,"DCZLJB":10}', spacing_below: small, background: ''}
+  properties: {role: null, col_widths: '{"FYQGWM":40,"IMCBIM":10,"DCZLJB":10}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
   type: ColumnPanel
   layout_properties: {grid_position: 'AJZDFX,YPAQFS', full_width_row: true}
   components:
@@ -10,7 +10,7 @@ components:
     name: home_button_admin_1
     layout_properties: {grid_position: 'GVFDHL,ZBXUOO', full_width_row: true}
   - name: label_1
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '', visible: true, text: Edit Details, font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Edit Details}
     type: Label
     layout_properties: {grid_position: 'PIHTIF,WYSSGN'}
   - name: spacer_1
@@ -18,24 +18,24 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'JRGSMO,GXTDFM'}
   - name: text_box_1
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '', border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small, italic: false, background: '', bold: false, underline: false}
+    properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
     type: TextBox
     layout_properties: {grid_position: 'FAYIQN,FYQGWM'}
     data_bindings: []
   - name: button_1
-    properties: {role: tonal-button, align: full, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: false, underline: false, icon: ''}
+    properties: {role: tonal-button, bold: false, align: full, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: SAVE}
     type: Button
     layout_properties: {grid_position: 'FAYIQN,IMCBIM'}
     event_bindings: {click: button_1_click}
   - name: delete_button
-    properties: {role: tonal-button, align: full, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: DELETE, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#db2332', bold: false, underline: false, icon: ''}
+    properties: {role: tonal-button, bold: false, align: full, spacing_above: small, background: '#db2332', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: DELETE}
     type: Button
     layout_properties:
       col_widths: {}
       grid_position: FAYIQN,DCZLJB
     event_bindings: {click: delete_button}
 - type: Button
-  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true, foreground: white, visible: true, text: Back, font_size: null, font: '16', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: true, underline: false, icon: 'fa:backward'}
+  properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
   name: button_1_copy_3
   layout_properties:
     col_widths: {}

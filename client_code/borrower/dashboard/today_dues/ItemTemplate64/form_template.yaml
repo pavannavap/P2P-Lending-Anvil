@@ -29,7 +29,7 @@ components:
     type: Label
     layout_properties: {x: 3.0500030517578125, y: 73.38750000000005, width: 938.4}
   - name: product_details
-    properties: {role: null, align: left, height: 56, tooltip: '', placeholder: '', border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false, background: white, bold: false, underline: false}
+    properties: {role: null, bold: false, align: left, placeholder: '', spacing_above: small, background: white, underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: false, font_size: null, tooltip: '', height: 56, text: ''}
     type: TextArea
     layout_properties: {x: 355.9250076301396, y: 33.624996948987246, width: 563.7999877929688}
     data_bindings:
@@ -46,7 +46,7 @@ components:
     layout_properties: {x: 127.82114721679687, y: 338.8392639160156, width: 360.429}
     event_bindings: {click: outlined_button_1_click}
   - name: button_1
-    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: Pay, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: true, underline: false, icon: ''}
+    properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Pay}
     type: Button
     layout_properties: {x: 429.62501525878906, y: 338.83972721679686, width: 261}
     event_bindings: {click: button_1_click}
@@ -68,7 +68,7 @@ components:
     type: Label
     layout_properties: {x: 12.142868041992188, y: 134.33926391601562, width: 200}
   - name: label_1
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Scheduled Payment, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Scheduled Payment}
     type: Label
     layout_properties: {x: 10, y: 99.60714721679688, width: 160}
   - name: return
@@ -90,7 +90,7 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''Scheduled_date'']'}
   - name: label_2
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: false, text: Days Passed Due Date, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: false, border: '', italic: false, font_size: null, tooltip: '', text: Days Passed Due Date}
     type: Label
     layout_properties: {x: 12.142868041992188, y: 247.98214721679688, width: 160}
   - name: label_4

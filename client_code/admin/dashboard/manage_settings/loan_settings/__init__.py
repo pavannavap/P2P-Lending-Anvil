@@ -182,3 +182,7 @@ class loan_settings(loan_settingsTemplate):
         self.text_box_4.enabled = True
         self.text_box_5.enabled = True
         self.text_box_6.enabled = True
+
+    def button_3_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.manage_settings')

@@ -78,4 +78,8 @@ class borrowers(borrowersTemplate):
           self.text_box_1.text
           )
           self.data_grid_1.visible = True
+
+    def button_2_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      open_form('admin.dashboard.customer_management.handles_customer_registration')
         

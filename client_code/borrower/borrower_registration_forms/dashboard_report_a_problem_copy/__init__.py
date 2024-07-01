@@ -62,3 +62,7 @@ class dashboard_report_a_problem_copy(dashboard_report_a_problem_copyTemplate):
 
     # Open dashboard form or any other form
     open_form("borrower.dashboard")
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('borrower.borrower_registration_forms')

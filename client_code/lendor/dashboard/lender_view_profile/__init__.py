@@ -892,3 +892,7 @@ class lender_view_profile(lender_view_profileTemplate):
     self.institutional_panel.visible = False
     self.Individual_panel.visible = False
     self.bank_details_panel.visible = False
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('lendor.dashboard')

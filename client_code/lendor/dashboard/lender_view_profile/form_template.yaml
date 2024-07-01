@@ -17,6 +17,11 @@ components:
     properties: {}
     type: form:lendor.navigation_bar.Navigation_bar_lender_dashbord
     layout_properties: {grid_position: 'QRPREJ,JOMQGW', full_width_row: true}
+  - name: button_1
+    properties: {text: Back, background: '#05264d', align: right, foreground: white, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'CXOHXB,DSORHY', full_width_row: true}
+    event_bindings: {click: button_1_click}
   - name: column_panel_2
     properties: {role: elevated-card, col_widths: '{"ZWJJCA":15,"YAUNIP":15,"EUCVVS":30}', background: ''}
     type: ColumnPanel

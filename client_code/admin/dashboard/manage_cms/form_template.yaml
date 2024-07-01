@@ -76,11 +76,6 @@ components:
         properties: {height: 32}
         type: Spacer
         layout_properties: {grid_position: 'RWPRWQ,XHOETE'}
-      - name: button_2
-        properties: {text: Back, background: '#05264d', foreground: white, role: elevated-button, icon: 'fa:backward'}
-        type: Button
-        layout_properties: {grid_position: 'ZXNQMN,ZTKBHK'}
-        event_bindings: {click: button_2_click}
       - properties: {height: '3'}
         type: Spacer
         layout_properties: {grid_position: 'LXEPFH,FVTVHC'}

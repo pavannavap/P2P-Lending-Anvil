@@ -21,6 +21,11 @@ class view_profile_3(view_profile_3Template):
             if user_profile_data:
                 self.label_34.text = user_profile_data['usertype']
 
+            # Fetch additional data from fin_borrower table based on borrower_customer_id
+            borrower_data = app_tables.fin_borrower.get(customer_id=self.loan_data['borrower_customer_id'])
+            if borrower_data:
+                self.label_26.text = borrower_data['ascend_score']
+
             self.label_2.text = self.loan_data['loan_id']
             self.label_4.text = self.loan_data['borrower_customer_id']
             self.label_6.text = self.loan_data['borrower_full_name']
@@ -33,7 +38,6 @@ class view_profile_3(view_profile_3Template):
             self.label_20.text = self.loan_data['total_repayment_amount']
             # self.label_22.text = self.loan_data['total_payments_made']
             # self.label_24.text = self.loan_data['member_rom']
-            self.label_26.text = self.loan_data['ascend_score']
             self.label_28.text = self.loan_data['borrower_email_id']
             self.label_30.text = self.loan_data['tenure']
             self.label_32.text = self.loan_data['loan_updated_status']

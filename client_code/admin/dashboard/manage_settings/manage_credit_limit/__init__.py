@@ -56,6 +56,6 @@ class manage_credit_limit(manage_credit_limitTemplate):
 
     def button_1_click(self, **event_args):
       """This method is called when the button is clicked"""
-      pass
+      open_form('admin.dashboard.manage_settings')
     
    

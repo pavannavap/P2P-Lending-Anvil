@@ -89,4 +89,9 @@ components:
       type: Button
       layout_properties: {grid_position: 'RLGNZM,BLUBIC', full_width_row: false}
       event_bindings: {click: save_button}
+    - name: button_3
+      properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+      type: Button
+      layout_properties: {grid_position: 'CFNWSC,DZAYIE'}
+      event_bindings: {click: button_3_click}
 is_package: true

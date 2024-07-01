@@ -12,6 +12,11 @@ components:
     properties: {}
     layout_properties: {grid_position: 'OIWWSN,IPOCYG', row_background: '', full_width_row: true}
     name: home_button_admin_1
+  - name: button_2
+    properties: {text: Back, align: right, background: '#05264d', foreground: white, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'BVFRFS,PJBLIS', full_width_row: true}
+    event_bindings: {click: button_2_click}
   - properties: {col_widths: '{"QOMVMS":12,"ELERTG":57}'}
     type: ColumnPanel
     layout_properties: {grid_position: 'ACQPTG,ZCOIZR'}

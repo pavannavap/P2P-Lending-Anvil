@@ -35,7 +35,7 @@ class edit_other_loan(edit_other_loanTemplate):
       # Save changes to the database
       self.selected_row.update()
 
-      existing_min_points = [row["min_points"] for row in app_tables.categories.search(group_name="other_loan")]
+      existing_min_points = [row["min_points"] for row in app_tables.fin_admin_ascend_categories.search(group_name="other_loan")]
       max_points = max(existing_min_points + [updated_points])
 
       existing_group_row  = app_tables.fin_admin_ascend_groups.get(group_name="other_loan")

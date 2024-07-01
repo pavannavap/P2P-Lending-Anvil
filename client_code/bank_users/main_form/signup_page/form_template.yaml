@@ -64,7 +64,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'LOUJDS,RTKSOW XFQEHB,XJKBDX'}
     - name: label_1
-      properties: {text: 'Peer_to_peet (P2P) lending, also known as crowdfunding or marketplace lending , is financial model that allows individuals or businesses to lend and borrow money directly from one another through online platforms, bypassing  traditional financial institutions like banks.', foreground: white, font_size: 20}
+      properties: {text: 'Peer_to_pee (P2P) lending, also known as crowdfunding or marketplace lending , is financial model that allows individuals or businesses to lend and borrow money directly from one another through online platforms, bypassing  traditional financial institutions like banks.', foreground: white, font_size: 20}
       type: Label
       layout_properties: {grid_position: 'LOUJDS,RTKSOW XGLERH,EVCEYC'}
     - name: image_1

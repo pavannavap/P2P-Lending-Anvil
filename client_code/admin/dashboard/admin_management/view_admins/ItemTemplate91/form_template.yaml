@@ -24,11 +24,11 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''mobile_no'']', writeback: false}
   - name: label_3
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: grey, visible: true, text: '---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: grey, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'}
     type: Label
     layout_properties: {x: 0, y: 79.41071428731084, width: 937.71435546875}
   - name: label_4
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Admin  ID :', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Admin  ID :'}
     type: Label
     layout_properties: {x: 17.071465630084276, y: 130.8214503712952, width: 92.00000762939453}
   - name: label_11
@@ -40,7 +40,7 @@ components:
     type: Label
     layout_properties: {x: 18.00002397969365, y: 233.0178309865296, width: 200.00001525878906}
   - name: label_8
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Join Date, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Join Date}
     type: Label
     layout_properties: {x: 20.6071406789124, y: 281.9642421193421, width: 92.00000762939453}
   - name: credit

@@ -20,4 +20,4 @@ class manage_issues(manage_issuesTemplate):
       
 
   def button_1_click(self, **event_args):
-    open_form('admin.dashboard.manage_cms')
+    open_form('admin.dashboard.manage_cms.manage_issues_dropdown')

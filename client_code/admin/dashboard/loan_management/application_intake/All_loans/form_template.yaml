@@ -1,0 +1,37 @@
+container: {type: ColumnPanel}
+components:
+- name: home_button_admin_1
+  properties: {}
+  type: form:admin.dashboard.home_button_admin
+  layout_properties: {grid_position: 'CVAQVV,AUTIOU', full_width_row: true}
+- name: button_1
+  properties: {text: Back, foreground: 'theme:On Secondary', role: elevated-button, align: right, icon: 'fa:backward', background: '#05264d', bold: true}
+  type: Button
+  layout_properties: {grid_position: 'TKJWUZ,RYSJNI', full_width_row: true}
+  event_bindings: {click: button_1_click}
+- name: label_1
+  properties: {text: All Loan Details, bold: true, align: center, role: title}
+  type: Label
+  layout_properties: {grid_position: 'YGZYBA,WXNKWU', full_width_row: true}
+- name: label_2
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'RYCWHJ,XSLPLQ', full_width_row: true}
+- name: data_grid_1
+  properties:
+    columns:
+    - {id: JKSDUP, title: Borrower name, data_key: name, expand: true}
+    - {id: VJQQOR, title: Borrower customer id, data_key: b cust id, expand: true}
+    - {id: OJLQEN, title: Lender name, data_key: l name, expand: true}
+    - {id: XOEDRC, data_key: i cust id, title: Lender customer id, expand: true}
+    - {id: PWGDPE, data_key: p name, title: 'Product name    ', expand: true}
+    - {id: ABJLSN, data_key: l amt, title: loan amount, expand: true}
+    - {id: ZZSLWZ, data_key: l u status, title: Loan status, expand: true}
+    role: tonal-data-grid
+  type: DataGrid
+  components:
+  - name: repeating_panel_1
+    properties: {item_template: admin.dashboard.loan_management.application_intake.All_loans.RowTemplate62}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'MDGHPD,WMVAIF', full_width_row: true}
+is_package: true

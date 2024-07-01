@@ -1,0 +1,12 @@
+container: {type: ColumnPanel}
+components:
+- name: home_button_admin_1_copy
+  properties: {}
+  type: form:admin.dashboard.home_button_admin
+  layout_properties: {grid_position: 'MWRZZK,BWSUTB', full_width_row: true}
+- name: back_button
+  properties: {role: outlined-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+  type: Button
+  layout_properties: {grid_position: 'LEVYIK,MMSWEK', full_width_row: true}
+  event_bindings: {click: button_1_click}
+is_package: true

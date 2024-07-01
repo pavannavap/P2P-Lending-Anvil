@@ -13,9 +13,9 @@ components:
     name: home_button_admin_1
     layout_properties: {grid_position: 'KYUXNZ,BNFMYQ', full_width_row: true}
   - name: button_1
-    properties: {text: Back, background: '#05264d', foreground: 'theme:On Primary', align: right}
+    properties: {text: Back, background: '#05264d', foreground: 'theme:On Primary', align: right, icon: 'fa:backward'}
     type: Button
-    layout_properties: {grid_position: 'IIGPAI,NXWXDY'}
+    layout_properties: {grid_position: 'IIGPAI,NXWXDY', full_width_row: true}
     event_bindings: {click: button_1_click}
   - name: repeating_panel_1
     properties: {item_template: admin.dashboard.admin_management.view_admins.ItemTemplate91}

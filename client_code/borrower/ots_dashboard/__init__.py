@@ -169,3 +169,5 @@ class ots_dashboard(ots_dashboardTemplate):
 
     def button_4_click(self, **event_args):
         open_form('borrower.ots_dashboard.my_loans')
+
+

@@ -73,3 +73,5 @@ class dashboard_about(dashboard_aboutTemplate):
   def wallet_dashboard_link_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('wallet.wallet')
+
+

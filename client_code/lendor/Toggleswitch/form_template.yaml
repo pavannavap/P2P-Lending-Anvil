@@ -13,7 +13,7 @@ events:
 custom_component: true
 components:
 - type: CheckBox
-  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '', allow_indeterminate: false, visible: true, text: '', font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false, background: '', bold: false, checked: false, underline: false}
+  properties: {role: null, bold: false, align: left, spacing_above: small, background: '', allow_indeterminate: false, underline: false, font: '', foreground: '', checked: false, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
   name: check_box_1
   layout_properties: {slot: default}
   event_bindings: {show: check_box_1_show, hide: check_box_1_hide, change: check_box_1_change}

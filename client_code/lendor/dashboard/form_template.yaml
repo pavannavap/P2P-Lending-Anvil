@@ -126,12 +126,12 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'XGUQGL,BDZCMG'}
     name: spacer_8
-  - properties: {col_widths: '{"NETDIR":15,"IXNAVP":15,"KVCNSJ":15,"PNJZIQ":15}'}
+  - properties: {col_widths: '{"NETDIR":15,"IXNAVP":15,"KVCNSJ":15}'}
     type: ColumnPanel
     layout_properties: {grid_position: 'XIBORR,NXKDOZ', full_width_row: true}
     name: column_panel_2
     components:
-    - properties: {role: elevated-card, col_widths: '{"EITWZQ":25,"DMUXBO":35}', background: '#Edf0f4'}
+    - properties: {role: elevated-card, col_widths: '{"EITWZQ":20,"DMUXBO":40}', background: '#Edf0f4'}
       type: ColumnPanel
       layout_properties: {grid_position: 'ERCHQY,NETDIR', full_width_row: true}
       name: column_panel_7
@@ -140,17 +140,14 @@ components:
         type: Image
         layout_properties: {grid_position: 'BJUXXD,EITWZQ'}
         name: image_1
-      - properties:
-          icon: ''
-          text: |
-            My Commitments
-          bold: true
-        type: Label
-        layout_properties: {grid_position: 'BJUXXD,DMUXBO GGORVD,QGVFNC'}
-        name: label_2
+      - name: label_2
+        properties: {text: My Commitments, align: left, background: '', foreground: black, bold: true}
+        type: Button
+        layout_properties: {grid_position: 'BJUXXD,DMUXBO KQOMKX,OFGOCS'}
+        event_bindings: {click: label_2_click}
       - properties: {}
         type: Label
-        layout_properties: {grid_position: 'BJUXXD,DMUXBO ZCKWPG,MKRQYJ'}
+        layout_properties: {grid_position: 'BJUXXD,DMUXBO KGCDDA,SCSBSB'}
         name: label_3
     - properties: {role: elevated-card, col_widths: '{"UKYYYV":20,"UPASZV":40,"NTQYEL":6,"ZBZGBO":54}', background: '#Edf0f4'}
       type: ColumnPanel

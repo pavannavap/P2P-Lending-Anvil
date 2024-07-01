@@ -131,6 +131,4 @@ class foreclosure_request(foreclosure_requestTemplate):
             # Handle the case when no user profile record is found
             print("User profile record not found for the current user.")
 
-    def button_1_click(self, **event_args):
-        """This method is called when the button is clicked"""
-        open_form('borrower.dashboard')
+

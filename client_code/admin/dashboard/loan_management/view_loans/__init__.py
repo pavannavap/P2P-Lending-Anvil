@@ -14,6 +14,34 @@ class view_loans(view_loansTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    self.update_approved_loan_count()
+
+  def update_approved_loan_count(self):
+         # Any code you write here will run before the form opens.
+    self.data = tables.app_tables.fin_loan_details.search()
+    # Calculate count of 'approved' records
+    approved_count = len([record for record in self.data if record['loan_updated_status'] == 'approved'])
+    rejected_count = len([record for record in self.data if record['loan_updated_status'] == 'rejected'])
+    opened_count = len([record for record in self.data if record['loan_updated_status'] in ['extension' , 'foreclosure']])
+    disbursed_count = len([record for record in self.data if record['loan_updated_status'] == 'disbursed'])
+    default_count = len([record for record in self.data if record['loan_updated_status'] == 'default'])
+    lapsed_count = len([record for record in self.data if record['loan_updated_status'] == 'lapsed'])
+    closed_count = len([record for record in self.data if record['loan_updated_status'] == 'closed'])
+    under_process = len([record for record in self.data if record['loan_updated_status'] == 'under process'])
+    Npa_count = len([record for record in self.data if record['loan_updated_status'] == 'NPA'])
+    One_time_settlement_count = len([record for record in self.data if record['loan_updated_status'] == 'OTS'])
+
+    # Update UI label_8
+    self.label_1.text = str(approved_count)
+    self.label_2.text = str(rejected_count)
+    self.label_3.text = str(under_process)
+    self.label_4.text = str(opened_count)
+    self.label_5.text = str(disbursed_count)
+    self.label_6.text = str(lapsed_count)
+    self.label_7.text = str(default_count)
+    self.label_8.text = str(closed_count)
+    self.label_9.text = str(Npa_count)
+    self.label_10.text =str(One_time_settlement_count)
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""

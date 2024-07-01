@@ -1,0 +1,33 @@
+is_package: true
+container: {type: DataRowPanel}
+components:
+- name: label_1
+  properties: {align: center, italic: false}
+  type: Label
+  layout_properties: {column: JKSDUP}
+  data_bindings:
+  - {property: text, code: 'self.item[''name'']', writeback: false}
+- name: label_2
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: VJQQOR}
+  data_bindings:
+  - {property: text, code: 'self.item[''mobile_no'']', writeback: false}
+- name: label_3
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: OJLQEN}
+  data_bindings:
+  - {property: text, code: 'self.item[''email'']', writeback: false}
+- name: label_4
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: NODJLI}
+  data_bindings:
+  - {property: text, code: 'self.item[''loan_count'']', writeback: false}
+- name: label_5
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: HFHHMP}
+  data_bindings:
+  - {property: text, code: 'self.item[''return_on_investment'']', writeback: false}

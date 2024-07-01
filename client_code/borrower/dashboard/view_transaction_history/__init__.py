@@ -71,6 +71,4 @@ class view_transaction_history(view_transaction_historyTemplate):
 
         self.repeating_panel_2.items = self.result
 
-    def back_btn_click(self, **event_args):
-      """This method is called when the button is clicked"""
-      open_form('borrower.dashboard')
+ 

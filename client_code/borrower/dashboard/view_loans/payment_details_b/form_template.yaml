@@ -135,7 +135,7 @@ components:
     layout_properties: {grid_position: 'QIKCJY,ZISDOY'}
     name: spacer_1
   - type: Button
-    properties: {role: null, bold: false, align: center, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+    properties: {role: null, bold: false, align: center, spacing_above: small, background: '#0b2547', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
     layout_properties: {grid_position: 'ZJSLXK,WDKOQC'}
     event_bindings: {click: button_2_click}
     name: button_2

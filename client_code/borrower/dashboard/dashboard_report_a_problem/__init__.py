@@ -41,7 +41,7 @@ class dashboard_report_a_problem(dashboard_report_a_problemTemplate):
         elif selected_category == 'Technical Issue':
             self.drop_down_2.items = [(sti['subcategory_technical_issue'], sti['subcategory_technical_issue']) for sti in self.subcategory]
         else:
-            self.drop_down_2.items = [(sli['borrower_subcategory_loan_issue'], sli['borrower_subcategory_loan_issue']) for sli in self.subcategory]
+            self.drop_down_2.items = [(sli['lendor_subcategory_loan_issue'], sli['lendor_subcategory_loan_issue']) for sli in self.subcategory]
 
 
 
@@ -105,6 +105,7 @@ class dashboard_report_a_problem(dashboard_report_a_problemTemplate):
     def file_loader_1_change(self, file, **event_args):
       """This method is called when a new file is loaded into this FileLoader"""
       self.image_issue.source = file
+
 
 
 

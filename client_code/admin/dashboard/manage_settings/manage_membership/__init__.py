@@ -479,3 +479,7 @@ class manage_membership(manage_membershipTemplate):
     for membership_type in ['Silver', 'Gold', 'Platinum']:
         self.save_membership(membership_type)
     open_form('admin.dashboard.manage_settings.manage_membership')
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.manage_settings')

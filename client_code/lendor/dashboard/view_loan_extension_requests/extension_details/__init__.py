@@ -60,18 +60,7 @@ class extension_details(extension_detailsTemplate):
         # Save changes to the table
         self.selected_row.update()
         Notification("Borrower will get notified").show()
-
-        loan = app_tables.fin_loan_details.get(loan_id=self.selected_row['loan_id'])
-        if loan is not None:
-            # Get the current remaining amount
-            current_remaining_amount = loan['remaining_amount'] or 0  # If remaining amount is None, default to 0
-            # Add the extension amount to the current remaining amount
-            new_remaining_amount = current_remaining_amount + self.selected_row['extension_amount']
-            # Update the remaining amount in the loan details table
-            loan['remaining_amount'] = new_remaining_amount
-            loan.update()
-
-      
+    
         self.update_extension_status('approved')
 
         loan = app_tables.fin_loan_details.get(loan_id=self.selected_row['loan_id'])

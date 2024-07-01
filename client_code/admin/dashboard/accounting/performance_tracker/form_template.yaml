@@ -153,6 +153,7 @@ components:
       properties: {source: _/theme/admin/dashboard/performance_tracker/assigned-application.png, display_mode: shrink_to_fit, height: '100'}
       type: Image
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
+      event_bindings: {mouse_up: image_4_copy_3_copy_mouse_up}
     - name: button_3
       properties:
         text: "Total applications \nassigned "
@@ -166,12 +167,39 @@ components:
       properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: black, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
       name: label_4
       layout_properties: {grid_position: 'MNJOZT,DKVWZH'}
+  - name: spacer_3
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'EWGRDI,IELXEG'}
+  - name: column_panel_1
+    properties: {role: elevated-card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'EWGRDI,VCGFUU'}
+    components:
+    - name: image_1_copy_1
+      properties: {height: 127, source: _/theme/admin/dashboard/accounting/performance.png}
+      type: Image
+      layout_properties: {grid_position: 'UFWPZR,JPHRIE'}
+      event_bindings: {mouse_up: image_1_copy_1_mouse_up}
+    - name: button_4
+      properties: {text: Product Performance, bold: true, foreground: black, font_size: 16}
+      type: Button
+      layout_properties: {grid_position: 'NEQJZR,XIVQQC'}
+      event_bindings: {click: button_4_click}
+    - name: label_1
+      properties: {align: center, foreground: black}
+      type: Label
+      layout_properties: {grid_position: 'PVRAPF,OHMQYA'}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'EWGRDI,WKIGUP'}
   - name: spacer_5
     properties: {height: '30'}
     type: Spacer
     layout_properties: {grid_position: 'LXEPFH,FVTVHC'}
   - type: Button
-    properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+    properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
     name: button_1
     layout_properties: {grid_position: 'ZAPOQC,MONGXB'}
     event_bindings: {click: button_1_click}

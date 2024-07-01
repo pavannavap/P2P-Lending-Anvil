@@ -1,0 +1,45 @@
+is_package: true
+container: {type: DataRowPanel}
+components:
+- name: label_1
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: JKSDUP}
+  data_bindings:
+  - {property: text, code: 'self.item[''customer_id'']', writeback: false}
+- name: label_2
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: VJQQOR}
+  data_bindings:
+  - {property: text, code: 'self.item[''full_name'']', writeback: false}
+- name: label_3
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: OJLQEN}
+  data_bindings:
+  - {property: text, code: 'self.item[''mobile'']', writeback: false}
+- name: label_4
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: TMNSTM}
+  data_bindings:
+  - {property: text, code: 'self.item[''email_user'']', writeback: false}
+- name: label_5
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: HHULSK}
+  data_bindings:
+  - {property: text, code: 'self.item[''usertype'']', writeback: false}
+- name: label_6
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: HGVTXH}
+  data_bindings:
+  - {property: text, code: 'self.item[''signed_up'']', writeback: false}
+- name: label_7
+  properties: {align: center}
+  type: Label
+  layout_properties: {column: QWDYAS}
+  data_bindings:
+  - {property: text, code: 'self.item[''email_verified'']', writeback: false}

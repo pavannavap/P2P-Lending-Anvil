@@ -213,6 +213,10 @@ class dashboard(dashboardTemplate):
     """This method is called when the button is clicked"""
     open_form('lendor.dashboard.my_returns')
 
+  def label_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('lendor.dashboard.lender_commitments_chart')
+
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""
     customer_id = self.user_id
@@ -241,3 +245,5 @@ class dashboard(dashboardTemplate):
   def link_16_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('borrower.dashboard.borrower_portfolio_first_page')
+
+

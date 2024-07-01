@@ -70,11 +70,11 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''loan_disbursed_timestamp'']', writeback: false}
   - name: label_3
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: grey, visible: true, text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: grey, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'}
     type: Label
     layout_properties: {x: 3.0500030517578125, y: 79.2249755859375, width: 938.4}
   - type: TextArea
-    properties: {role: null, align: left, height: 56, tooltip: '', placeholder: '', border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false, background: white, bold: false, underline: false}
+    properties: {role: null, bold: false, align: left, placeholder: '', spacing_above: small, background: white, underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: false, font_size: null, tooltip: '', height: 56, text: ''}
     name: product_details
     layout_properties: {x: 358.2249984741211, y: 35.3375244140625, width: 563.8}
     data_bindings:

@@ -21,6 +21,8 @@ components:
   properties: {align: center}
   type: Label
   layout_properties: {column: QARCVI}
+  data_bindings:
+  - {property: text, code: 'self.item['''']', writeback: false}
 - name: label_5
   properties: {align: center}
   type: Label

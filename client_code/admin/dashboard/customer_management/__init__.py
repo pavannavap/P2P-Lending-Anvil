@@ -40,6 +40,10 @@ class customer_management(customer_managementTemplate):
     """This method is called when a mouse button is released on this component"""
     open_form('admin.dashboard.customer_management.managing_customer_profile')
 
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard')
+
   
 
   

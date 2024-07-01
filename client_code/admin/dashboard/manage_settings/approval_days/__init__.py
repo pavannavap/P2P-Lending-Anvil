@@ -92,3 +92,7 @@ class approval_days(approval_daysTemplate):
     """This method is called when the button is clicked"""
     self.text_box_1.enabled = True
     self.text_box_2.enabled = True
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.manage_settings')

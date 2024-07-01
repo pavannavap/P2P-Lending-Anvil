@@ -155,14 +155,17 @@ db_schema:
       admin_ui: {width: 200, order: 39}
       type: string
     - name: total_amount_paid
-      admin_ui: {order: 22.96875, width: 200}
+      admin_ui: {order: 22.5, width: 200}
       type: number
     - name: remaining_amount
-      admin_ui: {order: 15.5, width: 200}
+      admin_ui: {order: 9.5, width: 200}
       type: number
     - name: lender_returns
       admin_ui: {width: 200, order: 8.875}
       type: number
+    - name: lender_rejected_timestamp
+      admin_ui: {width: 200, order: 41}
+      type: datetime
     title: fin_loan_details
   fin_lendor_salary_type:
     client: full
@@ -433,9 +436,6 @@ db_schema:
     - name: remaining_tenure
       admin_ui: {width: 200, order: 6.125}
       type: number
-    - name: part_lender_returns
-      admin_ui: {width: 200, order: 17}
-      type: number
     - name: part_remaining_amount
       admin_ui: {width: 200, order: 18}
       type: number
@@ -452,6 +452,15 @@ db_schema:
       admin_ui: {width: 200}
       type: number
     - name: total_remaining_amount
+      admin_ui: {width: 200}
+      type: number
+    - name: total_platform_fee
+      admin_ui: {width: 200, order: 10.96875}
+      type: number
+    - name: lender_returns
+      admin_ui: {width: 200, order: 9.5}
+      type: number
+    - name: part_lender_returns
       admin_ui: {width: 200}
       type: number
   fin_guarantor_details:
@@ -999,13 +1008,13 @@ db_schema:
       type: number
     title: fin_extends_loan
   fin_borrower_subcategory_loan_issue:
+    title: fin_borrower_subcategory_loan_issue
     client: full
     server: full
     columns:
     - name: borrower_subcategory_loan_issue
-      admin_ui: {order: 0, width: 280}
+      admin_ui: {width: 280}
       type: string
-    title: fin_borrower_subcategory_loan_issue
   fin_issue_category:
     client: full
     server: full
@@ -1030,6 +1039,23 @@ db_schema:
       admin_ui: {width: 200, order: 0}
       type: string
     title: fin_borrower_marrital_status
+  fin_eod_reports:
+    client: full
+    server: full
+    columns:
+    - name: date
+      admin_ui: {width: 200, order: 0}
+      type: date
+    - name: total_amount_received
+      admin_ui: {width: 200, order: 1}
+      type: number
+    - name: total_platform_share
+      admin_ui: {width: 200, order: 2}
+      type: number
+    - name: total_lender_share
+      admin_ui: {width: 200, order: 3}
+      type: number
+    title: fin_eod_reports
   fin_approval_days:
     client: full
     server: full
@@ -1854,3 +1880,10 @@ secrets:
     value: {LKJSUIQBLUZBMSE6: ''}
 uplink_visible: true
 renamed: true
+scheduled_tasks:
+- task_name: update_eod_report_1
+  time_spec:
+    n: 1
+    every: minute
+    at: {}
+  job_id: ENFJOUKU

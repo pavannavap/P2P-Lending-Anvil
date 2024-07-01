@@ -40,5 +40,9 @@ class manage_ascend_score(manage_ascend_scoreTemplate):
     """This method is called when a mouse button is released on this component"""
     open_form('admin.dashboard.manage_ascend_score.view_ascend_subcategory')
 
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard')
+
 
 

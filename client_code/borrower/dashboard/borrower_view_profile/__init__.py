@@ -1022,3 +1022,5 @@ class borrower_view_profile(borrower_view_profileTemplate):
               if photo:
                 user_profile['user_photo'] = photo
               user_profile.update()
+
+

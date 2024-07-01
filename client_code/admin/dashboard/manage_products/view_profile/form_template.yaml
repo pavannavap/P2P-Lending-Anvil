@@ -18,6 +18,7 @@ components:
     layout_properties:
       col_widths: {}
       grid_position: QYMBAS,YHVGJC
+      full_width_row: true
     event_bindings: {click: button_1_copy_3_click}
   - type: ColumnPanel
     properties: {col_widths: '{}'}

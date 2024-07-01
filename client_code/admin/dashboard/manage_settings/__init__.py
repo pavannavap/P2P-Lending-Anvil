@@ -67,4 +67,8 @@ class manage_settings(manage_settingsTemplate):
   def day_approval(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('admin.dashboard.manage_settings.approval_days')
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard')
     

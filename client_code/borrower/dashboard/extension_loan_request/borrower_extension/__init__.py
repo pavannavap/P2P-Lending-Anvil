@@ -63,9 +63,6 @@ class borrower_extension(borrower_extensionTemplate):
                       extend_row['status_timestamp '] = datetime.now()
                       extend_row.update()
 
-                      loan_details_row = app_tables.fin_loan_details.get(loan_id=loan_id)
-                      if loan_details_row:
-                        loan_details_row['remaining_amount'] += round(extend_row['extension_amount'] ,2)
       
         extend_rows = app_tables.fin_extends_loan.search(loan_id=loan_id)
 

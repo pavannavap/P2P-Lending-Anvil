@@ -126,7 +126,7 @@ class check_out(check_outTemplate):
         self.processing_fee.text = "{:.2f}".format(processing_fee)
         self.i_r.text = "{:.2f}".format(interest_amount)
         self.emi.text = "{:.2f}".format(emi)
-        self.emi_processing_extension.text = "{:.2f}".format(total_emi)
+        self.emi_processing_extension.text = "{:.2f}".format( emi + processing_fee)
         print(float(self.emi.text))
         self.remaining_tenure.text = remaining_tenure
       
@@ -606,7 +606,7 @@ class check_out(check_outTemplate):
       
           self.emi_amount_label.text = "{:.2f}".format(foreclosure_emi_amount)
           self.extension_amount_label.text = "{:.2f}".format(foreclosure_amount)
-          self.total_emi_amount_label.text = "{:.2f}".format(total_due_amount + foreclosure_amount)
+          self.total_emi_amount_label.text = "{:.2f}".format(total_due_amount)
           self.total_emi_amount_label.visible = True
           self.label_3.visible = True
 
@@ -789,7 +789,7 @@ class check_out(check_outTemplate):
 
        # extra_amount = float(self.extension_amount_label.text)
         extra_fee = lapsed_fee + default_fee + extra_amount + npa
-        total_extra_fee = lapsed_fee + default_fee + extra_amount + processing_fee
+        total_extra_fee = lapsed_fee + default_fee + extra_amount + processing_fee + npa
       
         # total_emi_amount = float(self.total_emi_amount_label.text)  # Fetch total EMI amount including extra payment
         borrower_wallet = app_tables.fin_wallet.get(customer_id=self.user_id)
@@ -821,9 +821,9 @@ class check_out(check_outTemplate):
                     lender_wallet.update()
 
 
-                    existing_fee_rows = app_tables.fin_platform_fees.get()
+                    existing_fee_rows = app_tables.fin_platform_details.get()
                     if existing_fee_rows is None:
-                      app_tables.fin_platform_fees.add_row(platform_returns=total_extra_fee)
+                      app_tables.fin_platform_details.add_row(platform_returns=total_extra_fee)
                     else:
                       existing_fee_rows['platform_returns'] +=total_extra_fee
                       existing_fee_rows.update()
@@ -938,7 +938,9 @@ class check_out(check_outTemplate):
                         npa_fee=npa,
                         default_fee=default_fee,
                         lapsed_fee=lapsed_fee,
-                        total_remaining_amount= round(remaining_amount,2)
+                        total_remaining_amount= round(remaining_amount,2),
+                        total_platform_fee=total_extra_fee,
+                        lender_returns=round(i_r,2),
                         
                         
                     )
@@ -1083,3 +1085,7 @@ class check_out(check_outTemplate):
     
     # Open the part_payment form and pass loan_details as a parameter
       open_form('borrower.dashboard.today_dues.check_out.part_payment', loan_details=loan_details, selected_row=self.selected_row)
+
+    def button_1_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      open_form('borrower.dashboard.today_dues')

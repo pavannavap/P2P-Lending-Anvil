@@ -35,7 +35,7 @@ components:
       grid_position: FAYIQN,DCZLJB
     event_bindings: {click: delete_button_click}
 - name: button_2
-  properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:angle-double-left', role: elevated-button}
+  properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward', role: elevated-button}
   type: Button
   layout_properties: {grid_position: 'GNYLLM,BZYMFE'}
 is_package: true

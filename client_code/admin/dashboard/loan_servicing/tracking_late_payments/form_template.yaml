@@ -88,7 +88,7 @@ components:
     type: RepeatingPanel
   layout_properties: {grid_position: 'OCAUJE,IOSDPP', full_width_row: true}
 - name: button_1
-  properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+  properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
   type: Button
   layout_properties: {grid_position: 'HSHLOB,PLYSXC'}
   event_bindings: {click: button_1_click}

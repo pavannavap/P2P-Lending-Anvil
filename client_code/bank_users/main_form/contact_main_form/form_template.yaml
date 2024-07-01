@@ -41,7 +41,7 @@ components:
     type: Label
     layout_properties: {x: 593.6375122070312, y: 134.9124984741211, width: 359.5625}
   - name: label_2
-    properties: {align: left, foreground: '#094586', text: P2P Lending Pvt LTD, font_size: 25, icon_align: left_edge, italic: false, bold: true, underline: false, icon: 'fa:map-marker'}
+    properties: {bold: true, align: left, icon: 'fa:map-marker', underline: false, icon_align: left_edge, foreground: '#094586', italic: false, font_size: 25, text: P2P Lending Pvt LTD}
     type: Label
     layout_properties: {x: 581.6500061042607, y: 82.67500305175781, width: 312.3870244140625}
     data_bindings: []
@@ -112,28 +112,28 @@ components:
     full_width_row: true
   components:
   - name: flow_panel_3_copy_2
-    properties: {role: null, vertical_align: full, spacing: medium, align: left, tooltip: '', border: '', foreground: '', visible: true, spacing_above: none, spacing_below: none, background: '#05264d'}
+    properties: {role: null, vertical_align: full, align: left, spacing_above: none, background: '#05264d', foreground: '', spacing_below: none, visible: true, border: '', tooltip: '', spacing: medium}
     type: FlowPanel
     layout_properties: {row: JUWDTC, width_xs: 4, col_xs: 0, width: 198.328}
     components:
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: white, visible: true, text: '© 2023 - 2024, Ascend - All Rights Reserved', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: true, underline: false, icon: ''}
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '© 2023 - 2024, Ascend - All Rights Reserved'}
       name: label_4
       layout_properties: {}
   - name: link_5
-    properties: {role: null, url: 'https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9179915&mcid=6844056167778418689&cid=&gclid=EAIaIQobChMI1pr54ZHVggMVF6dmAh2IxgGNEAAYASAAEgKqevD_BwE&gclsrc=aw.ds', align: left, tooltip: '', border: '', foreground: white, visible: true, text: '', font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: 'fa:linkedin-square'}
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:linkedin-square', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9179915&mcid=6844056167778418689&cid=&gclid=EAIaIQobChMI1pr54ZHVggMVF6dmAh2IxgGNEAAYASAAEgKqevD_BwE&gclsrc=aw.ds', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
     type: Link
     layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 8, width: 93.6875}
   - name: link_2
-    properties: {role: null, url: 'https://www.facebook.com/', align: left, tooltip: '', border: '', foreground: white, visible: true, text: '', font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: 'fa:facebook-square'}
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:facebook-square', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://www.facebook.com/', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
     type: Link
     layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 9, width: 93.6875}
   - name: link_4
-    properties: {role: null, url: 'https://www.instagram.com/accounts/login/', align: left, tooltip: '', border: '', foreground: white, visible: true, text: '', font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: 'fa:instagram'}
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:instagram', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://www.instagram.com/accounts/login/', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
     type: Link
     layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 10, width: 93.6875}
   - name: link_3
-    properties: {role: null, url: 'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D', align: left, tooltip: '', border: '', foreground: white, visible: true, text: '', font_size: 30, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small, italic: false, background: th, bold: false, underline: false, icon: 'fa:twitter'}
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: th, icon: 'fa:twitter', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: white, url: 'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: ''}
     type: Link
     components: []
     layout_properties: {row: JUWDTC, width_xs: 1, col_xs: 11, width: 93.6875}

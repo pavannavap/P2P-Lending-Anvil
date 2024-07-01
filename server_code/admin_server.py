@@ -14,6 +14,9 @@ import random
 from email.message import EmailMessage
 import bcrypt
 import anvil.pdf
+from datetime import datetime, time ,timedelta
+
+
 
 @anvil.server.callable
 def check_user_profile(email):
@@ -42,12 +45,19 @@ def update_user_status(email, email_verified):
         # If user does not exist, create a new row
         user = app_tables.users.add_row(email=email, email_verified=email_verified)
     return True
+
+@anvil.server.callable
 def create_receipt_pdf(name, image_source,selected_row):    
     # Your PDF creation logic here
     pdf = anvil.pdf.PDFRenderer(landscape=True).render_form("admin.dashboard.accounting.payment_receipt.emi_details.payment_receipts",selected_row = selected_row)  
     return pdf
 
-
+@anvil.server.callable
+def create_receipt_pdf1(name, image_source,selected_row):    
+    # Your PDF creation logic here
+    pdf = anvil.pdf.PDFRenderer(landscape=True).render_form("admin.dashboard.accounting.payment_receipt.emi_details")  
+    return pdf
+  
 # Define server function to navigate to the Invest Now form
 @anvil.server.callable
 def open_invest_now_form():
@@ -363,7 +373,7 @@ def update_fin_platform_fees():
     num_products = len(app_tables.fin_product_details.search())
 
     # Step 4: Calculate the total amount invested by lenders
-    total_lenders_invested = sum(lender['lender_total_commitments'] for lender in app_tables.fin_lender.search())
+    total_lenders_invested = sum(lender['lender_total_commitments'] or 0 for lender in app_tables.fin_lender.search())
 
     # Step 5: Calculate the number of unique borrowers who have taken a loan
     borrower_ids = set()
@@ -451,4 +461,42 @@ def update_fin_platform_fees():
 #         most_used_product=most_used_product_name,
 #         total_borrowers_loan_taken = total_borrowers_loan_taken
 #     )
+@anvil.server.callable
+def update_eod_report():
+    today_date = datetime.now().date()
+    all_payments = app_tables.fin_emi_table.search()
+    
+    payments_today = [payment for payment in all_payments if payment['scheduled_payment_made'].date() == today_date]
+    
+    total_amount_received = sum(payment['amount_paid'] for payment in payments_today)
+    total_platform_amount = sum(payment['total_platform_fee'] for payment in payments_today)
+    total_lender_share = sum(payment['lender_returns'] for payment in payments_today)
+    
+    eod_report = app_tables.fin_eod_reports.get(date=today_date)
+    if eod_report is None:
+        eod_report = app_tables.fin_eod_reports.add_row(date=today_date, total_amount_received=0, total_platform_share=0, total_lender_share=0)
+    
+    eod_report['total_amount_received'] = total_amount_received
+    eod_report['total_platform_share'] = total_platform_amount
+    eod_report['total_lender_share'] = total_lender_share
+    eod_report.update()
 
+@anvil.server.background_task
+def update_eod_report_1():
+    today_date = datetime.now().date()
+    all_payments = app_tables.fin_emi_table.search()
+    
+    payments_today = [payment for payment in all_payments if payment['scheduled_payment_made'].date() == today_date]
+    
+    total_amount_received = sum(payment['amount_paid'] for payment in payments_today)
+    total_platform_amount = sum(payment['total_platform_fee'] for payment in payments_today)
+    total_lender_share = sum(payment['lender_returns'] for payment in payments_today)
+    
+    eod_report = app_tables.fin_eod_reports.get(date=today_date)
+    if eod_report is None:
+        eod_report = app_tables.fin_eod_reports.add_row(date=today_date, total_amount_received=0, total_platform_share=0, total_lender_share=0)
+    
+    eod_report['total_amount_received'] = total_amount_received
+    eod_report['total_platform_share'] = total_platform_amount
+    eod_report['total_lender_share'] = total_lender_share
+    eod_report.update()

@@ -48,7 +48,7 @@ components:
     type: Label
     layout_properties: {x: 13.803573608398438, y: 250.00001525878906, width: 103.571}
   - name: label_8
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Loan Amount, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Loan Amount}
     type: Label
     layout_properties: {x: 10, y: 217.25001525878906, width: 200}
   - name: label_7
@@ -82,7 +82,7 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''interest_rate'']', writeback: false}
   - name: label_1
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Loan Id, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Loan Id}
     type: Label
     layout_properties: {x: 10, y: 120.32142639160156, width: 160}
   - name: label_2

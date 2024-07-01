@@ -2,7 +2,7 @@ is_package: true
 container: {type: ColumnPanel}
 components:
 - name: xy_panel_1
-  properties: {role: outlined-card, width: 758.4, align: center, height: 545.7454528808594, tooltip: '', border: '', foreground: '', visible: true, spacing_above: small, spacing_below: small, background: ''}
+  properties: {role: outlined-card, align: center, spacing_above: small, width: 758.4, background: '', foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', height: 545.7454528808594}
   type: XYPanel
   layout_properties: {grid_position: 'VVFDLA,JCLVDO'}
   components:
@@ -13,118 +13,118 @@ components:
     data_bindings:
     - {property: source, code: 'self.item[''user_photo'']'}
   - name: label_111
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 14, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 78.48750305175781, y: 0, width: 200}
     data_bindings:
     - {property: text, code: 'self.item[''full_name'']', writeback: false}
   - name: label_11
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 14, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 14, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 78.52499389648438, y: 27.949981689453125, width: 200}
     data_bindings:
     - {property: text, code: 'self.item[''mobile'']', writeback: false}
   - name: label_3
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: grey, visible: true, text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: grey, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'}
     type: Label
     layout_properties: {x: 0, y: 62.625, width: 938.4}
   - name: label_1
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 108.57498168945312, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''PaymentNumber'']'}
   - name: label_2
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 154.56246948242188, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''PaymentDate'']'}
   - name: label_33
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 200.55001831054688, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''BeginningBalance'']'}
   - name: label_4
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 246.55001831054688, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''ScheduledPayment'']'}
   - name: label_5
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 292.5500183105469, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''ExtraPayment'']'}
   - name: label_6
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 338.5500183105469, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''TotalPayment'']'}
   - name: label_7
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 384.5500183105469, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''Principal'']'}
   - name: label_8
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 430.5500183105469, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''Interest'']'}
   - name: label_10
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 476.5500183105469, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''ProcessingFee'']'}
   - name: label_9
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '', font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: ''}
     type: Label
     layout_properties: {x: 426.9875030517578, y: 522.5500183105469, width: 160}
     data_bindings:
     - {property: text, code: 'self.item[''EndingBalance'']'}
   - name: label_20
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Payment Number :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Payment Number :'}
     type: Label
     layout_properties: {x: 10, y: 105.69996948242192, width: 160}
   - name: label_21
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Payment Date :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Payment Date :'}
     type: Label
     layout_properties: {x: 10, y: 154.55001831054688, width: 160}
   - name: label_22
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Beginning Balance :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Beginning Balance :'}
     type: Label
     layout_properties: {x: 10, y: 197.68751831054692, width: 160}
   - name: label_23
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Scheduled  Payment :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Scheduled  Payment :'}
     type: Label
     layout_properties: {x: 10, y: 240.8375183105469, width: 188}
   - name: label_24
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Extra Payment :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Extra Payment :'}
     type: Label
     layout_properties: {x: 10, y: 289.6875183105469, width: 160}
   - name: label_25
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Total Payment :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Total Payment :'}
     type: Label
     layout_properties: {x: 10, y: 332.8375183105469, width: 160}
   - name: label_26
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Principal :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Principal :'}
     type: Label
     layout_properties: {x: 10, y: 384.54999389648435, width: 160}
   - name: label_27
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Interest :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Interest :'}
     type: Label
     layout_properties: {x: 10, y: 424.8375183105469, width: 160}
   - name: label_28
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Processing Fee :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Processing Fee :'}
     type: Label
     layout_properties: {x: 10, y: 470.8374938964844, width: 160}
   - name: label_29
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: 'Ending Balance :', font_size: 18, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: 'Ending Balance :'}
     type: Label
     layout_properties: {x: 10, y: 522.5499938964844, width: 160}

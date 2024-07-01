@@ -43,4 +43,9 @@ components:
     type: Button
     layout_properties: {grid_position: 'RLGNZM,BLUBIC', full_width_row: false}
     event_bindings: {click: button_2_click}
+  - name: button_1
+    properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'QRJODE,INGUOH'}
+    event_bindings: {click: button_1_click}
 is_package: true

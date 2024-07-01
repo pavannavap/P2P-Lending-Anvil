@@ -12,15 +12,23 @@ components:
     properties: {}
     name: home_button_admin_1
     layout_properties: {grid_position: 'ADUYHR,SVOLIL', full_width_row: true}
+  - name: button_1_copy
+    properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+    type: Button
+    layout_properties: {grid_position: 'POSMNZ,RUJDJI', full_width_row: true}
+    event_bindings: {click: button_1_copy_click}
+  - name: label_1
+    properties: {text: View Open loans, align: center, bold: true, role: title}
+    type: Label
+    layout_properties: {grid_position: 'FJIGHC,XHSWZV', full_width_row: true}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'EZTBDV,AGMJUT', full_width_row: true}
   - name: repeating_panel_1
     properties: {item_template: admin.dashboard.loan_management.view_loans.open_loans.ItemTemplate3}
     type: RepeatingPanel
-    layout_properties: {grid_position: 'INEUUA,WYYJYD'}
-  - type: Button
-    properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-    name: button_1_copy
-    layout_properties: {grid_position: 'UJPRXJ,ZKSCCW'}
-    event_bindings: {click: button_1_copy_click}
+    layout_properties: {grid_position: 'INEUUA,WYYJYD KIJISP,FCMWGY'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

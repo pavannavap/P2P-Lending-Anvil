@@ -1,32 +1,32 @@
 container: {type: ColumnPanel}
 components:
 - name: navbar_links_copy_1
-  properties: {role: null, vertical_align: top, spacing: huge, align: center, tooltip: '', border: '', foreground: '', visible: true, spacing_above: none, spacing_below: none, background: '#0b2547'}
+  properties: {role: null, vertical_align: top, align: center, spacing_above: none, background: '#0b2547', foreground: '', spacing_below: none, visible: true, border: '', tooltip: '', spacing: huge}
   type: FlowPanel
   layout_properties: {grid_position: 'ZOBRMJ,BJAJIF', full_width_row: true}
   components:
   - name: borrower_dashboard_home_linkhome_borrower_registration_button_copy_1
-    properties: {role: null, url: '', align: center, tooltip: Home, border: '', foreground: 'theme:On Primary', visible: true, text: Home, font_size: 15, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: 'fa:home'}
+    properties: {role: null, bold: true, align: center, col_widths: '{}', spacing_above: small, background: '', icon: 'fa:home', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: 'theme:On Primary', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 15, tooltip: Home, text: Home}
     type: Link
     event_bindings: {click: borrower_dashboard_home_linkhome_borrower_registration_button_copy_1_click}
     layout_properties: {}
   - name: borrower_dashboard_contact_link
-    properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: 'theme:On Primary', visible: true, text: Contact Us, font_size: 15, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: 'fa:phone'}
+    properties: {role: null, bold: true, align: center, col_widths: '{}', spacing_above: small, background: '', icon: 'fa:phone', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: 'theme:On Primary', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 15, tooltip: '', text: Contact Us}
     type: Link
     layout_properties: {grid_position: 'BEBLLM,GIPZSG'}
     event_bindings: {click: contact_main_form_link_click}
   - name: About_Us
-    properties: {role: null, url: '', align: center, tooltip: '', border: '', foreground: 'theme:On Primary', visible: true, text: About Us, font_size: 15, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: 'fa:adn'}
+    properties: {role: null, bold: true, align: center, col_widths: '{}', spacing_above: small, background: '', icon: 'fa:adn', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: 'theme:On Primary', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 15, tooltip: '', text: About Us}
     type: Link
     layout_properties: {grid_position: 'JTNMWA,LCMVRS'}
     event_bindings: {click: About_Us_click}
   - name: Report_A_Problem
-    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: 'theme:On Primary', visible: true, text: Report A Problem, font_size: 15, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: 'fa:comment'}
+    properties: {role: null, bold: true, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:comment', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: 'theme:On Primary', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 15, tooltip: '', text: Report A Problem}
     type: Link
     layout_properties: {}
     event_bindings: {click: Report_A_Problem_click}
   - name: help_link
-    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: 'theme:On Primary', visible: true, text: Help, font_size: 15, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '', spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: 'fa:question-circle'}
+    properties: {role: null, bold: true, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:question-circle', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: 'theme:On Primary', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 15, tooltip: '', text: Help}
     type: Link
     event_bindings: {click: help_link_click}
     layout_properties: {}

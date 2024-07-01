@@ -46,3 +46,7 @@ class home_button_admin(home_button_adminTemplate):
     anvil.users.logout()
     open_form('bank_users.main_form')
 
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard')
+

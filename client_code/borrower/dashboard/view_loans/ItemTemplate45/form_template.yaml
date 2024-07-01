@@ -72,7 +72,7 @@ components:
     type: Label
     layout_properties: {x: 3.0500030517578125, y: 73.38749999999982, width: 938.4}
   - type: TextArea
-    properties: {role: null, align: left, height: 56, tooltip: '', placeholder: '', border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false, background: white, bold: false, underline: false}
+    properties: {role: null, bold: false, align: left, placeholder: '', spacing_above: small, background: white, underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: false, font_size: null, tooltip: '', height: 56, text: ''}
     name: product_details
     layout_properties: {x: 355.9250076301396, y: 33.624996948987246, width: 563.7999877929688}
     data_bindings:

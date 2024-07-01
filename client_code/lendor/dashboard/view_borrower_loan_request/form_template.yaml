@@ -29,7 +29,7 @@ components:
     layout_properties: {grid_position: 'UIECVG,RUNXWZ', full_width_row: true}
     name: navigation_bar_lender_dashbord_1
   - type: Button
-    properties: {role: filled-button, bold: false, align: right, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 15, tooltip: '', text: Back}
+    properties: {role: filled-button, bold: false, align: right, spacing_above: small, background: '#0b2547', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 15, tooltip: '', text: Back}
     layout_properties: {grid_position: 'RTPPIT,CGCKJL', full_width_row: true}
     event_bindings: {click: button_1_click}
     name: button_1

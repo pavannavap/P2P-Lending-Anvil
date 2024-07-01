@@ -36,7 +36,7 @@ components:
     type: Label
     layout_properties: {x: 10, y: 150.3392791748047, width: 200}
   - name: label_8
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Loan Amount, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Loan Amount}
     type: Label
     layout_properties: {x: 10, y: 190.25001525878906, width: 200}
   - name: label_9
@@ -68,11 +68,11 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''loan_disbursed_timestamp'']'}
   - name: label_3
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: grey, visible: true, text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: grey, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'}
     type: Label
     layout_properties: {x: 0, y: 89.137451171875, width: 938.4}
   - type: TextArea
-    properties: {role: null, align: left, height: 56, tooltip: '', placeholder: '', border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null, auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false, background: white, bold: false, underline: false}
+    properties: {role: null, bold: false, align: left, placeholder: '', spacing_above: small, background: white, underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: false, font_size: null, tooltip: '', height: 56, text: ''}
     name: product_details
     layout_properties: {x: 358.22503662109375, y: 37.53753662109375, width: 563.8}
     data_bindings:

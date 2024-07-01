@@ -9,7 +9,7 @@ components:
   layout_properties: {slot: default}
   components:
   - type: ColumnPanel
-    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"PWLLJC":30,"JLUSGY":35,"VEUHUR":25,"THXISZ":15,"FOOZGC":25,"FVVEWJ":20}', spacing_below: small, background: ''}
+    properties: {role: null, col_widths: '{"PWLLJC":30,"JLUSGY":35,"VEUHUR":25,"THXISZ":15,"FOOZGC":25,"FVVEWJ":20}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
     name: content_panel_copy_2
     layout_properties:
       col_widths: {}
@@ -21,12 +21,12 @@ components:
       name: home_button_admin_1
       layout_properties: {grid_position: 'OIHFRN,PWLLJC', row_background: '', full_width_row: true}
     - type: Button
-      properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: Back, font_size: null, font: '16', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: true, underline: false, icon: 'fa:backward'}
+      properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
       name: button_1_copy
       layout_properties: {grid_position: 'YMAEOH,SUTUCQ', full_width_row: true}
       event_bindings: {click: button_1_click}
     - type: Label
-      properties: {role: null, align: center, tooltip: '', border: '', foreground: '', visible: true, text: View Profile, font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+      properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: View Profile}
       name: label_1_copy
       layout_properties: {grid_position: 'JSNJZR,SUFXXP'}
     - name: spacer_1
@@ -34,27 +34,27 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'KJQTJM,THXISZ'}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '   Name', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Name'}
       name: label_2_copy
       layout_properties: {grid_position: 'KJQTJM,FOOZGC CSPQKF,ALQPFH'}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '   Email', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Email'}
       name: label_3_copy
       layout_properties: {grid_position: 'KJQTJM,FOOZGC SVARPQ,UQYDDM'}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '   Mobile No', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Mobile No'}
       name: label_4_copy
       layout_properties: {grid_position: 'KJQTJM,FOOZGC UYQTUG,JHJKZI'}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '   Joining Date', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Joining Date'}
       name: label_5_copy
       layout_properties: {grid_position: 'KJQTJM,FOOZGC EXWMKC,VVCVMW'}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '   Role', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Role'}
       name: label_6_copy
       layout_properties: {grid_position: 'KJQTJM,FOOZGC GZYQPW,QXYJUR'}
     - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '   Permission', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '   Permission'}
       name: label_12_copy
       layout_properties: {grid_position: 'KJQTJM,FOOZGC BPWAUL,LUCJZC'}
     - type: Label
@@ -90,17 +90,17 @@ components:
       name: label_14_copy
       layout_properties: {grid_position: 'TORGCF,SMXDMW'}
     - type: Button
-      properties: {role: outlined-button, align: right, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: Edit, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
+      properties: {role: outlined-button, bold: false, align: right, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Edit}
       name: button_2_copy
       layout_properties: {grid_position: 'JXACMF,LLLMAJ'}
       event_bindings: {click: button_2_click}
     - type: Button
-      properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: Update, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
+      properties: {role: outlined-button, bold: false, align: center, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Update}
       name: button_3_copy
       layout_properties: {grid_position: 'JXACMF,UZPBBT'}
       event_bindings: {click: button_3_click}
     - type: Button
-      properties: {role: outlined-button, align: left, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: Delete, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#0b2547', bold: false, underline: false, icon: ''}
+      properties: {role: outlined-button, bold: false, align: left, spacing_above: small, background: '#0b2547', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Delete}
       name: button_4_copy
       layout_properties: {grid_position: 'JXACMF,TLVGCF'}
       event_bindings: {click: button_4_click}

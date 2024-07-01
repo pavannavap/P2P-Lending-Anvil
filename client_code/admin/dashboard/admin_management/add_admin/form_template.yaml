@@ -7,16 +7,16 @@ components:
   properties: {}
   layout_properties: {grid_position: 'PTBVNJ,JJXPMO', full_width_row: true}
   name: home_button_admin_1
+- properties: {text: Back, foreground: 'theme:On Primary', icon: 'fa:backward', background: '#05264d', bold: true, align: right}
+  type: Button
+  layout_properties: {grid_position: 'WFVLLE,YSDAIU', full_width_row: true}
+  name: button_1
+  event_bindings: {click: button_1_click}
 - properties: {spacing_above: none, spacing_below: none, role: null}
   type: ColumnPanel
   layout_properties: {grid_position: 'UACKEM,NTBJDA', full_width_row: true}
   name: column_panel_1
   components:
-  - properties: {text: Back, foreground: 'theme:On Primary', icon: 'fa:angle-double-left', background: '#05264d', bold: true, align: right}
-    type: Button
-    layout_properties: {grid_position: 'FSSYHS,RKKUNA', full_width_row: true}
-    name: button_1
-    event_bindings: {click: button_1_click}
   - properties: {role: outlined-card, spacing: huge, align: center, background: '#05264d', foreground: 'theme:On Primary'}
     type: FlowPanel
     layout_properties: {grid_position: 'WVVNBA,JKXLQZ', full_width_row: false}
@@ -39,7 +39,7 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VPXZNF'}
       name: spacer_1
-    - properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '    Date :', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    - properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '    Date :'}
       type: Label
       layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF FWRHQG,AOAQOT'}
       name: label_1_copy
@@ -47,7 +47,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF FWRHQG,LMGQXT'}
       name: date_lable
-    - properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '    Name :', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    - properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '    Name :'}
       type: Label
       layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF SLQBMT,UWXBOE'}
       name: label_1_copy_copy
@@ -55,7 +55,7 @@ components:
       type: TextBox
       layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF SLQBMT,GAZWJT'}
       name: admin_name
-    - properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: '    Email Id: ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    - properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: '    Email Id: '}
       type: Label
       layout_properties: {grid_position: 'WJWNQB,ZJBHAN DTWTHP,VWHOAF EBCAEF,FEUENQ'}
       name: label_2_copy

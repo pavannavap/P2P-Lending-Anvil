@@ -12,16 +12,24 @@ components:
     properties: {}
     name: home_button_admin_1
     layout_properties: {grid_position: 'AETBJQ,WGCLPP', full_width_row: true}
+  - name: navbar_links
+    properties: {align: right}
+    type: FlowPanel
+    layout_properties: {grid_position: 'EOSYVJ,FSYRDG', full_width_row: true}
+    components:
+    - name: button_1_copy
+      properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+      type: Button
+      event_bindings: {click: button_1_copy_click}
+  - name: label_1
+    properties: {text: View Approved loans, align: center, bold: true, role: title}
+    type: Label
+    layout_properties: {grid_position: 'JXHFMX,VPZZRO', full_width_row: true}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'VYNPNW,RADTZK', full_width_row: true}
   - type: RepeatingPanel
     properties: {item_template: admin.dashboard.loan_management.view_loans.approved_loans.ItemTemplate31}
     name: repeating_panel_2
-    layout_properties: {grid_position: 'KFMOWY,ZOIRHB'}
-- type: FlowPanel
-  properties: {align: center}
-  name: navbar_links
-  layout_properties: {slot: nav-right}
-  components:
-  - type: Button
-    properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
-    name: button_1_copy
-    event_bindings: {click: button_1_copy_click}
+    layout_properties: {grid_position: 'REPIQV,GRWUDD KFMOWY,ZOIRHB'}

@@ -542,7 +542,7 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'VJYOJJ,KGORIJ MOVBIS,LAJNUK'}
     - name: button_1_copy_3
-      properties: {role: elevated-button, bold: false, align: right, spacing_above: small, background: '#05264d', icon: 'fa:arrow-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 17, tooltip: '', text: 'Back  '}
+      properties: {role: elevated-button, bold: false, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 17, tooltip: '', text: 'Back  '}
       type: Button
       layout_properties: {grid_position: 'YSSRYD,DWJJWK'}
       event_bindings: {click: button_1_copy_3_click}

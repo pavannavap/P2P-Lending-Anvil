@@ -3,7 +3,7 @@ container:
   properties: {col_widths: '{"EMHHXZ":30,"LMHRTT":10,"OWFYDN":20}', visible: true}
 components:
 - type: ColumnPanel
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"FDDXVJ":15,"HACQJG":45,"GVPHFB":15,"VRVUMX":45}', spacing_below: small, background: ''}
+  properties: {role: null, col_widths: '{"FDDXVJ":15,"HACQJG":45,"GVPHFB":15,"VRVUMX":45}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
   name: column_panel_2
   layout_properties: {grid_position: 'UQCZNB,KHJKIT', full_width_row: true}
   components:
@@ -20,38 +20,38 @@ components:
     name: spacer_1
     layout_properties: {grid_position: 'KKFONF,HHEVLC'}
   - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Product Group, font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Product Group}
     name: label_1
     layout_properties: {grid_position: 'SPGCWB,GVPHFB'}
   - type: DropDown
     properties:
       role: outlined
+      include_placeholder: true
+      bold: false
       align: full
-      tooltip: ''
       placeholder: select group
-      border: ''
-      enabled: true
+      spacing_above: small
+      background: ''
+      underline: false
+      font: ''
       foreground: ''
       items: []
-      visible: true
-      font_size: null
-      font: ''
-      spacing_above: small
       spacing_below: small
+      visible: true
+      border: ''
       italic: false
-      background: ''
-      bold: false
-      underline: false
-      include_placeholder: true
+      enabled: true
+      font_size: null
+      tooltip: ''
     name: drop_down_1
     layout_properties: {grid_position: 'SPGCWB,VRVUMX'}
     event_bindings: {change: name_change}
   - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true, text: Categories, font_size: 16, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '', bold: true, underline: false, icon: ''}
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Categories}
     name: label_2
     layout_properties: {grid_position: 'GMJCJS,FDDXVJ'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter product categories, border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small, italic: false, background: '', bold: false, underline: false}
+    properties: {role: outlined, bold: false, align: left, placeholder: Enter product categories, spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
     name: text_box_1
     layout_properties: {grid_position: 'GMJCJS,HACQJG'}
     event_bindings: {pressed_enter: text_box_1_pressed_enter}
@@ -60,14 +60,14 @@ components:
   name: spacer_2
   layout_properties: {grid_position: 'PZQYRS,IQBKVI'}
 - type: Button
-  properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: Back, font_size: null, font: '16', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: true, underline: false, icon: 'fa:backward'}
+  properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
   name: button_1_copy_3
   layout_properties:
     col_widths: {}
     grid_position: ASAVVK,EMHHXZ
   event_bindings: {click: button_1_copy_3_click}
 - type: Button
-  properties: {role: elevated-button, align: full, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: true, underline: false, icon: ''}
+  properties: {role: elevated-button, bold: true, align: full, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: SAVE}
   name: button_2
   layout_properties: {grid_position: 'ASAVVK,LMHRTT'}
   event_bindings: {click: button_2_click}

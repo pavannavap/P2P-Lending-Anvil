@@ -1,7 +1,7 @@
 container: {type: ColumnPanel}
 components:
 - name: column_panel_1
-  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"FYQGWM":20,"ASDCVV":20,"UCDNIP":10,"SMUBYP":10}', spacing_below: small, background: ''}
+  properties: {role: null, col_widths: '{"FYQGWM":20,"ASDCVV":20,"UCDNIP":10,"SMUBYP":10}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
   type: ColumnPanel
   layout_properties: {grid_position: 'LLRWQK,COABPV', full_width_row: true}
   components:
@@ -27,17 +27,17 @@ components:
     - {property: text, code: 'self.item[''name_categories'']', writeback: true}
     event_bindings: {pressed_enter: text_box_2_pressed_enter}
   - name: button_1
-    properties: {role: tonal-button, align: full, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: false, underline: false, icon: ''}
+    properties: {role: tonal-button, bold: false, align: full, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: SAVE}
     type: Button
     layout_properties: {grid_position: 'FAYIQN,UCDNIP'}
     event_bindings: {click: button_1_click}
   - name: button_1_copy
-    properties: {role: tonal-button, align: full, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: DELETE, font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#db2332', bold: false, underline: false, icon: ''}
+    properties: {role: tonal-button, bold: false, align: full, spacing_above: small, background: '#db2332', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: DELETE}
     type: Button
     layout_properties: {grid_position: 'FAYIQN,SMUBYP'}
     event_bindings: {click: delete_click}
 - type: Button
-  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true, foreground: 'theme:On Primary', visible: true, text: Back, font_size: null, font: '16', spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '#05264d', bold: true, underline: false, icon: 'fa:backward'}
+  properties: {role: elevated-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '16', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
   name: button_1_copy_3
   layout_properties:
     col_widths: {}

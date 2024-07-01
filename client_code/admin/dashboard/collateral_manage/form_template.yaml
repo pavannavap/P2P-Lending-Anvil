@@ -65,6 +65,11 @@ components:
     properties: {height: '3'}
     type: Spacer
     layout_properties: {grid_position: 'LXEPFH,FVTVHC'}
+  - name: button_3
+    properties: {text: Back, background: '#05264d', foreground: white, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'BIYCPE,ATMHXN'}
+    event_bindings: {click: button_3_click}
   - name: spacer_1
     properties: {height: 388.300048828125}
     type: Spacer

@@ -549,7 +549,11 @@ class Borr_loan_request(Borr_loan_requestTemplate):
         loan_details = app_tables.fin_loan_details.get(loan_id=str(selected_row['loan_id']))
         if loan_details is not None:
            loan_details['loan_updated_status'] = 'rejected'
+           loan_details['lender_rejected_timestamp'] = datetime.now()
            loan_details.update()
+        lender_rejected_timestamp = loan_details['lender_rejected_timestamp'] 
+        self.lender_rejected_timestamp = lender_rejected_timestamp
+        
 
         self.update_ui_based_on_status()
         

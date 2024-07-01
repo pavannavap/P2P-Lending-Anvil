@@ -155,3 +155,4 @@ class view_loans(view_loansTemplate):
         self.repeating_panel_8.visible = False
         self.repeating_panel_9.visible = False
         self.repeating_panel_10.visible = True  
+

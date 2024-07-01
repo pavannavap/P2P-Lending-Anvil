@@ -112,7 +112,7 @@ components:
           properties: {item_template: admin.dashboard.reporting_and_analytical_modules.risk_pool.ItemTemplate105}
           type: RepeatingPanel
       - name: back_button
-        properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+        properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:backward', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
         type: Button
         layout_properties: {grid_position: 'JCCBWY,DFDMKE'}
         event_bindings: {click: button_1_click}

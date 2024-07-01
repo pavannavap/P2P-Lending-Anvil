@@ -29,4 +29,5 @@ class borrower_portfolio_first_page(borrower_portfolio_first_pageTemplate):
 
             self.repeating_panel_2.items = self.result
 
+ 
             

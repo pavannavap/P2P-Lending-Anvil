@@ -75,7 +75,7 @@ class lender_revenue_share(lender_revenue_shareTemplate):
     self.load_loan_data()
 
   def load_loan_data(self):
-    loans = app_tables.fin_loan_details.search(loan_updated_status= q.any_of(q.like('closed loan'),q.like('foreclosure'),q.like('extension'),q.like('disbursed loan')),lender_customer_id=self.customer_id)
+    loans = app_tables.fin_loan_details.search(loan_updated_status= q.any_of(q.like('closed'),q.like('foreclosure'),q.like('extension'),q.like('disbursed')),lender_customer_id=self.customer_id)
 
     # Fetch loans based on desired statuses and customer_id
     # loans = app_tables.fin_loan_details.search(
@@ -124,7 +124,7 @@ class lender_revenue_share(lender_revenue_shareTemplate):
   def calculate_total_extra_fee(self, loan_id):
     # Fetch all records from fin_emi table based on loan_id and sum the extra_fee
     emis = app_tables.fin_emi_table.search(loan_id=loan_id)
-    total_extra_fee = sum(emi['extra_fee'] or 0 for emi in emis)  # Ensure extra_fee is not None
+    total_extra_fee = sum(emi['total_platform_fee'] or 0 for emi in emis)  # Ensure extra_fee is not None
     return total_extra_fee
 
   def button_1_click(self, **event_args):
